@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+
+        android:layout_height="250dp"
+        android:padding="16dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/amalBajarish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#0091D4"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+                android:foregroundGravity="bottom"
+                android:gravity="bottom|end"
+                android:padding="18dp"
+                android:paddingHorizontal="16dp"
+                android:singleLine="false" />
+
+            <EditText
+                android:id="@+id/getResult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0091D4"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+                android:gravity="top|end"
+                android:padding="16dp"
+                android:paddingHorizontal="16dp"
+                android:singleLine="false" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/C"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onButtonCilk"
+            android:text="C"
+            app:backgroundTint="#0875CC" />
+
+
+        <Button
+            android:id="@+id/bolish"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:onClick="mathMathematic"
+            android:text="/"
+            app:backgroundTint="#515A8A" />
+
+        <Button
+            android:id="@+id/kop"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:onClick="mathMathematic"
+            android:text="x"
+            app:backgroundTint="#515A8A" />
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onButtonCilk"
+            android:text="del"
+            app:backgroundTint="#515A8A" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/yetti"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onButtonCilk"
+            android:text="7" />
+
+
+        <Button
+            android:id="@+id/sakkiz"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:onClick="onButtonCilk"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/toqqz"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:onClick="onButtonCilk"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/ayiruv"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="mathMathematic"
+            android:text="-"
+            app:backgroundTint="#515A8A" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tort"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onButtonCilk"
+            android:text="4" />
+
+
+        <Button
+            android:id="@+id/besh"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:onClick="onButtonCilk"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/olti"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:onClick="onButtonCilk"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/qoshish"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="mathMathematic"
+            android:text="+"
+            app:backgroundTint="#515A8A" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bir"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onButtonCilk"
+            android:text="1" />
+
+
+        <Button
+            android:id="@+id/ikki"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:onClick="onButtonCilk"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/uch"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:onClick="onButtonCilk"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/qovuc"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="mathMathematic"
+            android:text="()"
+            app:backgroundTint="#515A8A" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nol"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onButtonCilk"
+            android:text="0" />
+
+
+        <Button
+            android:id="@+id/nuqta"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:onClick="onButtonCilk"
+            android:text="." />
+
+        <Button
+            android:id="@+id/musManfiy"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:onClick="onButtonCilk"
+            android:text="+/-" />
+
+        <Button
+            android:id="@+id/barobar"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onEqualClicked"
+            android:text="="
+            app:backgroundTint="#11CC19" />
+    </LinearLayout>
+
+
+</LinearLayout>
